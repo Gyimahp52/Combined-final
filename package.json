@@ -4,11 +4,11 @@
   "description": "A project for lazy loading and minification",
   "scripts": {
    
-    "build-js": "esbuild /scripts.js --minify --outfile=/scripts.min.js",
+    "build-js": "esbuild scripts.js --minify --outfile=scripts.min.js",
    
     "postinstall": "npx esbuild --version || npm rebuild esbuild",
     
-    "build": "npx esbuild /styles.css --minify --outfile=/styles.min.css && npx esbuild /scripts.js --minify --outfile=/scripts.min.js"
+    "build": "npx esbuild styles.css --minify --outfile=styles.min.css && npx esbuild scripts.js --minify --outfile=scripts.min.js"
   },
   "devDependencies": {
     "esbuild": "^0.19.2",
