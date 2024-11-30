@@ -1,0 +1,16 @@
+{
+  "name": "lazy-loading-minification",
+  "version": "1.0.0",
+  "description": "A project for lazy loading and minification",
+  "scripts": {
+    "build-css": "esbuild styles.css --minify --outfile=styles.min.css",
+    "build-js": "esbuild scripts.js --minify --outfile=scripts.min.js",
+    "build": "npm run build-css && npm run build-js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.2"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
